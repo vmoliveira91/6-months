@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Happy 6 Months</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="nome" class="text-center text-dark">
+            <h1>C</h1><h1 id="caroline" class="animated slideInLeft d-none">aroline</h1><br>
+            <h1>A</h1><h1 id="afetiva" class="animated slideInRight d-none">fetiva</h1><br>
+            <h1 id="r">R</h1><h1 id="ruiva" class="animated  tada d-none">UIVA</h1><br>
+            <h1>O</h1><h1 id="otaka" class="animated slideInLeft d-none">taka</h1><br>
+            <h1>L</h1><h1 id="linda" class="animated slideInRight d-none">inda</h1><br>
+            <button type="button" class="btn btn-danger" onclick="start()">START</button>
+        </div>
+        
+        <div id="beginning" class="d-none text-center">
+            <img src="img/1.beginning.jpg" class="img-fluid rounded">
+            <h3 class="text-center">The beginning</h3>
+            <button type="button" class="btn btn-danger" onclick="forward('beginning','sep')">
+                <i class="fas fa-angle-right"></i>
+            </button>
+        </div>
+        
+        <div id="sep" class="d-none text-center">
+            <img src="img/2.sep-17.jpg" class="img-fluid rounded">
+            <h3 class="text-center">September - 2017</h3>
+            <button type="button" class="btn btn-danger" onclick="backward('sep', 'beginning')">
+                <i class="fas fa-angle-left"></i>
+            </button>
+            <button type="button" class="btn btn-danger" onclick="forward('sep', 'oct')">
+                <i class="fas fa-angle-right"></i>
+            </button>
+        </div>
+        
+        <div id="oct" class="d-none text-center">
+            <img src="img/3.oct-17.jpg" class="img-fluid rounded">
+            <h3 class="text-center">October - 2017</h3>
+            <button type="button" class="btn btn-danger" onclick="backward('oct', 'sep')">
+                <i class="fas fa-angle-left"></i>
+            </button>
+            <button type="button" class="btn btn-danger" onclick="forward('oct', 'dec')">
+                <i class="fas fa-angle-right"></i>
+            </button>
+        </div>
+        
+        <div id="dec" class="d-none text-center">
+            <img src="img/4.dec-17.jpg" class="img-fluid rounded">
+            <h3 class="text-center">December - 2017</h3>
+            <button type="button" class="btn btn-danger" onclick="backward('dec', 'oct')">
+                <i class="fas fa-angle-left"></i>
+            </button>
+            <button type="button" class="btn btn-danger" onclick="forward('dec', 'new')">
+                <i class="fas fa-angle-right"></i>
+            </button>
+        </div>
+        
+        <div id="new" class="d-none text-center">
+            <img src="img/5.new-year.jpg" class="img-fluid rounded">
+            <h3 class="text-center">New Years Eve</h3>
+            <button type="button" class="btn btn-danger" onclick="backward('new', 'dec')">
+                <i class="fas fa-angle-left"></i>
+            </button>
+            <button type="button" class="btn btn-danger" onclick="forward('new', 'jan')">
+                <i class="fas fa-angle-right"></i>
+            </button>
+        </div>
+        
+        <div id="jan" class="d-none text-center">
+            <img src="img/6.jan-18.jpg" class="img-fluid rounded">
+            <h3 class="text-center">January - 2018</h3>
+            <button type="button" class="btn btn-danger" onclick="backward('jan', 'new')">
+                <i class="fas fa-angle-left"></i>
+            </button>
+            <button type="button" class="btn btn-danger" onclick="forward('jan', 'feb')">
+                <i class="fas fa-angle-right"></i>
+            </button>
+        </div>
+        
+        <div id="feb" class="d-none text-center">
+            <img src="img/7.feb-18.jpg" class="img-fluid rounded">
+            <h3 class="text-center">February - 2018</h3>
+            <button type="button" class="btn btn-danger" onclick="backward('feb', 'jan')">
+                <i class="fas fa-angle-left"></i>
+            </button>
+            <button type="button" class="btn btn-danger" onclick="forward('feb', 'apr')">
+                <i class="fas fa-angle-right"></i>
+            </button>
+        </div>
+        
+        <div id="apr" class="d-none text-center">
+            <img src="img/8.ap-18.jpg" class="img-fluid rounded">
+            <h3 class="text-center">April - 2018</h3>
+            <button type="button" class="btn btn-danger" onclick="backward('apr', 'feb')">
+                <i class="fas fa-angle-left"></i>
+            </button>
+            <button type="button" class="btn btn-danger" onclick="forward('apr', 'fim')">
+                <i class="fas fa-angle-right"></i>
+            </button>
+        </div>
+        
+        <div id="fim" class="d-none text-center">
+            <div id="heart" class="animated infinite pulse"></div>
+            <h3>Te amo, Vítor</h3>
+            <button type="button" class="btn btn-danger" onclick="startOver()">
+                END
+            </button>
+        </div>        
+        
+    </div> 
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
